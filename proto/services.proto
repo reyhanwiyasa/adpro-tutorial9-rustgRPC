@@ -1,6 +1,6 @@
-syntax = "proto3"
+syntax = "proto3";
 
-package = services
+package = services;
 
 service PaymentService{
     rpc ProcessPayment(PaymentRequest) returns (PaymentResponse);
@@ -20,7 +20,7 @@ message PaymentRequest{
 }
 
 message PaymentResponse{
-    boolean success = 1;
+    bool success = 1;
 }
 
 message TransactionRequest{
